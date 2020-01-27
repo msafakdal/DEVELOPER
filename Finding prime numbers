@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,j,sayi,bolunen;
+    
+    printf("Sayi giriniz:");    scanf("%d",&sayi);
+    printf("Bolunen sayi giriniz:");    scanf("%d",&bolunen);
+    
+    for(i=1;i<=100;i++)
+    {
+        for(j=2;j<=bolunen;j++)
+        {
+            if(sayi%j==0)
+            {
+                printf("Sayi asaldegildir");
+            }
+            else if(sayi%j==1)
+            {
+                printf("Sayi asaldır");
+            }
+            else
+            {
+                printf("Girdiginiz sayi negatiftir lutfen pozitif sayi giriniz:");
+            }
+        }
+    }
+    return 0;
+    
+}
