@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int i,x;
+    int toplam1=0;
+    int toplam2=0;
+
+    printf("x sayisini giriniz:");  scanf("%d",&x);
+
+    for(i=1;i<=x;i++)
+    {
+        if(i%2==0)
+        {
+            toplam1+=i;
+        }
+        if(i%2==1)
+        {
+        toplam2+=i;
+
+        }
+    }
+
+    printf("toplam1:%d",toplam1);
+    printf("\ntoplam2:%d",toplam2);
+
+    return 0;
+}
